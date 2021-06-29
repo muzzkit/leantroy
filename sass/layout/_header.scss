@@ -1,0 +1,26 @@
+.header {
+  
+    position: relative;
+    
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 125em) {
+        background-color: $color-white;
+    }
+
+  
+    &__logo-box {
+        position: absolute;
+        top: -4rem;
+        left: 4rem;
+        
+    }
+
+    &__logo {
+        letter-spacing: 1.5rem;
+    }
+    
+    &__text-box {
+        margin: 10rem auto;
+    }
+}

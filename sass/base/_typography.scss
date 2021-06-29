@@ -1,0 +1,82 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: $color-black;
+}
+
+.heading-primary {
+    font-family: "Cinzel", sans-serif;
+    color: $color-black;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: .2rem;
+        
+        @include respond(phone) {
+            letter-spacing: .2rem;
+            font-family: 2rem;
+        }
+        
+        /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    color: black;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+    &:hover {
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+.heading-tertiary {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: 2.3rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
