@@ -10,14 +10,18 @@
 
   
     &__logo-box {
+         height: 50px !important; 
+        width: 50px !important;
         position: absolute;
-        top: -4rem;
+        top: 0rem;
         left: 4rem;
+       
         
     }
 
     &__logo {
-        letter-spacing: 1.5rem;
+        height: 50px;
+        width: 50px;
     }
     
     &__text-box {
